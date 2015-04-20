@@ -1,7 +1,10 @@
 topic: ~TimingTest()
 language: jpj
 
-u:(おしえて)今は $MyCount ですよ。アニメーションしますね。 ^run(animations/Stand/Gestures/Hey_1) アニメーション終了後は $MyCount ですよ。
+u:(アニメーション) 今は $MyCount ですよ。^mode(disabled) 1つめのアニメーションしますね。 ^run(animations/Stand/Gestures/Hey_1) 1つめのアニメーション終了後は $MyCount ですよ。2つめのアニメーションしますね。 ^run(animations/Stand/Gestures/Explain_11) 2つめのアニメーション終了後は $MyCount ですよ。
+
+u:(メモリ) 今は $MyCount ですよ。開始メモリを設定しますね。 $MemoryTest/Started=$MyCount ^mode(disabled) アニメーションしますね。 ^run(animations/Stand/Gestures/Hey_1) アニメーション終了後は $MyCount ですよ。$MemoryTest/Stopped=$MyCount ^mode(contextual) 終了メモリを設定しました。
+
 
 # Defining extra concepts out of words or group of words
 #concept:(hello) [hello hi hey "good morning" greetings]

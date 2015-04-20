@@ -486,12 +486,13 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("テスト用Dialog 「おしえて」と言うと変数の値をしゃべります")]]>
+		self.onStopped("テスト用Dialog 「アニメーション」と言うとアニメーションをしながら、変数の値をしゃべります。\n「メモリ」と言うと、アニメーションに合わせてメモリの値を変更します。")]]>
 </content>
                             </script>
                             <pluginContent>
                                 <text>
-                                    <![CDATA[テスト用Dialog 「おしえて」と言うと変数の値をしゃべります]]>
+                                    <![CDATA[テスト用Dialog 「アニメーション」と言うとアニメーションをしながら、変数の値をしゃべります。
+「メモリ」と言うと、アニメーションに合わせてメモリの値を変更します。]]>
 </text>
                             </pluginContent>
                             <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
